@@ -18,11 +18,21 @@ function ChristmasPage() {
     e.dataTransfer.setData('star', 'dragging');
   };
 
-  const handleTouchStart = (e) => {
+  // const handleTouchStart = (e) => {
+  //   e.preventDefault();
+  //   e.persist(); 
+  //   const touch = e.touches[0];
+  //   setStarPosition({ x: touch.clientX - 60, y: touch.clientY - 60 });
+  // };
+  
+  const handleTouchMove = (e) => {
     e.preventDefault();
-    e.persist(); 
     const touch = e.touches[0];
     setStarPosition({ x: touch.clientX - 60, y: touch.clientY - 60 });
+  };
+
+  const handleTouchStart = (e) => {
+    e.preventDefault();
   };
 
   const handleDragOver = (e) => {
@@ -72,6 +82,8 @@ function ChristmasPage() {
         style={{ position: 'absolute', left: `${starPosition.x}px`, top: `${starPosition.y}px` }}
         draggable="true"
         onDragStart={handleDragStart}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
       />
       <audio ref={audioRef} src={song} />
       <button className="music-button" onClick={handleMusic}>
