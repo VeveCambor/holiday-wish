@@ -18,18 +18,17 @@ function ChristmasPage() {
     e.dataTransfer.setData('star', 'dragging');
   };
 
-  // const handleTouchStart = (e) => {
-  //   e.preventDefault();
-  //   e.persist(); 
-  //   const touch = e.touches[0];
-  //   setStarPosition({ x: touch.clientX - 60, y: touch.clientY - 60 });
-  // };
-  
-  const handleTouchMove = (e) => {
-    e.preventDefault();
-    const touch = e.touches[0];
-    setStarPosition({ x: touch.clientX - 60, y: touch.clientY - 60 });
-  };
+const handleTouchMove = (e) => {
+  e.preventDefault();
+  const touch = e.touches[0];
+  setStarPosition({ x: touch.clientX - 60, y: touch.clientY - 60 });
+  if (!isSnowing) {
+    setIsSnowing(true);
+  }
+  if (!isPlaying) {
+    handleMusic();
+  }
+};
 
   const handleTouchStart = (e) => {
     e.preventDefault();
