@@ -36,7 +36,7 @@ Vytvoř jednoduchou filmovou vyhledávací aplikaci s dvěma hlavními obrazovka
 
 
 
-[https://wewa-movieapp.vercel.app](https://holiday-wish.vercel.app/)
+https://holiday-wish.vercel.app/
 
 ---
 
