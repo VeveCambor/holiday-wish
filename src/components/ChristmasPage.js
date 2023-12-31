@@ -18,6 +18,13 @@ function ChristmasPage() {
     e.dataTransfer.setData('star', 'dragging');
   };
 
+  const handleTouchStart = (e) => {
+    e.preventDefault();
+    e.persist(); 
+    const touch = e.touches[0];
+    setStarPosition({ x: touch.clientX - 60, y: touch.clientY - 60 });
+  };
+
   const handleDragOver = (e) => {
     e.preventDefault();
   };
@@ -52,6 +59,7 @@ function ChristmasPage() {
       className="christmas-page"
       onDragOver={handleDragOver}
       onDrop={handleDrop}
+      onTouchStart={handleTouchStart}
     > 
       {isSnowing && <h1 className="wish-title-left">Merry</h1>}
       {isSnowing && <h1 className="wish-title-right">Christmas</h1>}
@@ -66,10 +74,10 @@ function ChristmasPage() {
         onDragStart={handleDragStart}
       />
       <audio ref={audioRef} src={song} />
-        <button className="music-button" onClick={handleMusic}>
-          <img src={isPlaying ? pauseIcon : playIcon} alt="Play/Pause" className='music-icon' />
-        </button>
-      </div>
+      <button className="music-button" onClick={handleMusic}>
+        <img src={isPlaying ? pauseIcon : playIcon} alt="Play/Pause" className='music-icon' />
+      </button>
+    </div>
   );
 }
 
