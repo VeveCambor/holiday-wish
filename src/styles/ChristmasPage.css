@@ -40,7 +40,7 @@
 }
 
 .wish-title-right {
-  right: 8%; 
+  right: 6%; 
 }
 
 @keyframes appear {
@@ -81,7 +81,7 @@ height: 70px;
   }
   
   .wish-title-right {
-    right: 8%; 
+    right: 6%; 
   }
 }
 
@@ -94,7 +94,7 @@ height: 70px;
   }
   
   .wish-title-right {
-    right: 8%; 
+    right: 6%; 
   }
 }
 
@@ -107,7 +107,7 @@ height: 70px;
   }
   
   .wish-title-right {
-    right: 6%; 
+    right: 5%; 
   }
 
   .music-button {
@@ -118,8 +118,8 @@ height: 70px;
   }
 
   .star-image {
-    top: 40%; /* Adjust as needed */
-    left: 40%; /* Adjust as needed */
+    top: 40%; 
+    left: 40%; 
   }
 }
 
