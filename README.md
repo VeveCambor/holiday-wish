@@ -29,8 +29,14 @@ Vytvoř jednoduchou filmovou vyhledávací aplikaci s dvěma hlavními obrazovka
 ---
 
 ## Náhled:
+<img width="400" alt="Snímka obrazovky 2023-12-31 o 22 39 02" src="https://github.com/VeveCambor/holiday-wish/assets/121693001/b07d3c35-768c-40ca-9087-0ccf8b66ba10">
 
-[https://wewa-movieapp.vercel.app](https://holiday-wish.vercel.app/)
+<img width="400" alt="Snímka obrazovky 2023-12-31 o 22 37 28" src="https://github.com/VeveCambor/holiday-wish/assets/121693001/45c97f9c-5ad4-477e-aa53-93b1fa26d9e4">
+
+
+
+
+https://holiday-wish.vercel.app/
 
 ---
 
